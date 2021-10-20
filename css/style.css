@@ -769,6 +769,7 @@ footer {
   font-family: 'FiraSans_Regular';
   font-size: 18px;
   line-height: normal;
+  margin-top: 30px;
   margin-right: 100px;
 }
 
@@ -941,6 +942,134 @@ footer {
   font-family: 'FiraSans_Regular';
   font-size: 16px;
   line-height: normal;
+}
+
+.foto {
+  background-image: url('../img/bg3.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 50px 0px;
+}
+
+.foto-slider {
+  position: relative;
+  max-width: 950px;
+  height: 450px;
+  margin-top: 60px;
+}
+
+.foto-slider__arrows {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(138, 133, 137, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 60px;
+  border-radius: 50px 0px 0px 50px;
+  z-index: 50;
+}
+
+.foto-slider__arrows svg {
+  width: 25px;
+  height: 25px;
+  fill: #000;
+  margin-left: 3px;
+  -webkit-transition: fill 0.3s ease 0s;
+  -o-transition: fill 0.3s ease 0s;
+  transition: fill 0.3s ease 0s;
+}
+
+.foto-slider__prev {
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.foto-slider__next {
+  right: 0;
+}
+
+.foto-slider .swiper-slide {
+  position: relative;
+}
+
+.foto-slider .swiper-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 130px;
+  background-image: url('../img/18.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.foto-slider .swiper-slide::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 25px;
+  height: 150px;
+  background-image: url('../img/19.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.foto-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.foto-mini {
+  max-width: 950px;
+  height: 135px;
+  margin-top: 40px;
+}
+
+.foto-mini .swiper-slide {
+  cursor: pointer;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.3s ease 0s, border 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s, border 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s, border 0.3s ease 0s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.foto-mini .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.foto-mini .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+  border: 3px solid #fff;
 }
 
 .footer {
@@ -1131,6 +1260,10 @@ footer {
     border-color: #ff8e00;
   }
 
+  .foto-slider__arrows:hover svg {
+    fill: #fff;
+  }
+
   .footer__item a:hover {
     color: #ff8e00;
   }
@@ -1247,6 +1380,14 @@ footer {
 
   .about__text {
     font-size: 14px;
+  }
+
+  .foto {
+    padding: 30px 0px;
+  }
+
+  .foto-slider {
+    margin-top: 30px;
   }
 }
 
@@ -1501,6 +1642,23 @@ footer {
     width: 100%;
     max-width: 550px;
   }
+
+  .foto-slider {
+    height: 350px;
+  }
+
+  .foto-slider .swiper-slide::before {
+    display: none;
+  }
+
+  .foto-slider .swiper-slide::after {
+    display: none;
+  }
+
+  .foto-mini {
+    margin-top: 30px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1723,6 +1881,14 @@ footer {
   .weekend__item {
     width: 300px;
   }
+
+  .foto-slider {
+    height: 250px;
+  }
+
+  .foto-mini {
+    display: none;
+  }
 }
 
 .webp .header { background-image: url(../img/bg1.webp); }
@@ -1730,3 +1896,9 @@ footer {
 .webp .header-main__name::before { background-image: url(../img/2.webp); }
 
 .webp .weekend { background-image: url(../img/bg2.webp); }
+
+.webp .foto { background-image: url(../img/bg3.webp); }
+
+.webp .foto-slider .swiper-slide::before { background-image: url(../img/18.webp); }
+
+.webp .foto-slider .swiper-slide::after { background-image: url(../img/19.webp); }

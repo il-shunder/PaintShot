@@ -59,3 +59,27 @@ window.addEventListener('resize', () => {
         });
     }
 });
+
+new Swiper('.foto-slider', {
+    navigation: {
+        nextEl: '.foto-slider__next',
+        prevEl: '.foto-slider__prev',
+    },
+    loop: true,
+    thumbs: {
+        swiper: {
+            el: '.foto-mini',
+            breakpoints: {
+                450: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                    spaceBetween: 30,
+                },
+                600: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        },
+    },
+});
