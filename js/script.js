@@ -177,3 +177,41 @@ new Swiper('.area2__slider', {
         },
     },
 });
+
+new Swiper('.companies-slider__top', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.companies__next',
+        prevEl: '.companies__prev',
+    },
+    breakpoints: {
+        420: {
+            slidesPerView: 2,
+        },
+        600: {
+            slidesPerView: 3,
+        },
+        960: {
+            slidesPerView: 5,
+        },
+    },
+});
+
+new Swiper('.companies-slider__bottom', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.companies__next',
+        prevEl: '.companies__prev',
+    },
+    breakpoints: {
+        420: {
+            slidesPerView: 2,
+        },
+        600: {
+            slidesPerView: 3,
+        },
+        960: {
+            slidesPerView: 5,
+        },
+    },
+});
