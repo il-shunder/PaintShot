@@ -60,6 +60,23 @@ window.addEventListener('resize', () => {
     }
 });
 
+new Swiper('.weekend__slider', {
+    navigation: {
+        nextEl: '.weekend__next',
+        prevEl: '.weekend__prev',
+    },
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    breakpoints: {
+        650: {
+            slidesPerView: 2,
+        },
+        900: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 new Swiper('.foto-slider', {
     navigation: {
         nextEl: '.foto-slider__next',
@@ -78,6 +95,83 @@ new Swiper('.foto-slider', {
                 600: {
                     slidesPerView: 3,
                     spaceBetween: 50,
+                },
+            },
+        },
+    },
+});
+
+new Swiper('.info-paintball__slider', {
+    navigation: {
+        nextEl: '.info-paintball__next',
+        prevEl: '.info-paintball__prev',
+    },
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        870: {
+            slidesPerView: 3,
+        },
+        1140: {
+            slidesPerView: 4,
+        },
+    },
+});
+
+new Swiper('.info-lasertag__slider', {
+    navigation: {
+        nextEl: '.info-lasertag__next',
+        prevEl: '.info-lasertag__prev',
+    },
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        870: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+new Swiper('.area1__slider', {
+    navigation: {
+        nextEl: '.area1__next',
+        prevEl: '.area1__prev',
+    },
+    loop: true,
+    thumbs: {
+        swiper: {
+            el: '.area1-mini',
+            slidesPerView: 2,
+            spaceBetween: 30,
+            breakpoints: {
+                500: {
+                    slidesPerView: 3,
+                },
+            },
+        },
+    },
+});
+
+new Swiper('.area2__slider', {
+    navigation: {
+        nextEl: '.area2__next',
+        prevEl: '.area2__prev',
+    },
+    loop: true,
+    thumbs: {
+        swiper: {
+            el: '.area2-mini',
+            slidesPerView: 2,
+            spaceBetween: 30,
+            breakpoints: {
+                500: {
+                    slidesPerView: 3,
                 },
             },
         },
