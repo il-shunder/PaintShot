@@ -67,6 +67,7 @@ new Swiper('.weekend__slider', {
     },
     slidesPerView: 1,
     slidesPerGroup: 1,
+    preloadImages: false,
     breakpoints: {
         650: {
             slidesPerView: 2,
@@ -83,9 +84,11 @@ new Swiper('.foto-slider', {
         prevEl: '.foto-slider__prev',
     },
     loop: true,
+    preloadImages: false,
     thumbs: {
         swiper: {
             el: '.foto-mini',
+            preloadImages: false,
             breakpoints: {
                 450: {
                     slidesPerView: 2,
@@ -108,6 +111,7 @@ new Swiper('.info-paintball__slider', {
     },
     slidesPerView: 1,
     slidesPerGroup: 1,
+    preloadImages: false,
     breakpoints: {
         600: {
             slidesPerView: 2,
@@ -128,6 +132,7 @@ new Swiper('.info-lasertag__slider', {
     },
     slidesPerView: 1,
     slidesPerGroup: 1,
+    preloadImages: false,
     breakpoints: {
         600: {
             slidesPerView: 2,
@@ -144,11 +149,13 @@ new Swiper('.area1__slider', {
         prevEl: '.area1__prev',
     },
     loop: true,
+    preloadImages: false,
     thumbs: {
         swiper: {
             el: '.area1-mini',
             slidesPerView: 2,
             spaceBetween: 30,
+            preloadImages: false,
             breakpoints: {
                 500: {
                     slidesPerView: 3,
@@ -164,11 +171,13 @@ new Swiper('.area2__slider', {
         prevEl: '.area2__prev',
     },
     loop: true,
+    preloadImages: false,
     thumbs: {
         swiper: {
             el: '.area2-mini',
             slidesPerView: 2,
             spaceBetween: 30,
+            preloadImages: false,
             breakpoints: {
                 500: {
                     slidesPerView: 3,
@@ -184,6 +193,7 @@ new Swiper('.companies-slider__top', {
         nextEl: '.companies__next',
         prevEl: '.companies__prev',
     },
+    preloadImages: false,
     breakpoints: {
         420: {
             slidesPerView: 2,
@@ -199,6 +209,7 @@ new Swiper('.companies-slider__top', {
 
 new Swiper('.companies-slider__bottom', {
     slidesPerView: 1,
+    preloadImages: false,
     navigation: {
         nextEl: '.companies__next',
         prevEl: '.companies__prev',
