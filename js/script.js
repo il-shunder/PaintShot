@@ -226,3 +226,49 @@ new Swiper('.companies-slider__bottom', {
         },
     },
 });
+
+new Swiper('.uniform__slider', {
+    slidesPerView: 1,
+    preloadImages: false,
+    navigation: {
+        nextEl: '.uniform__next',
+        prevEl: '.uniform__prev',
+    },
+    loop: true,
+    spaceBetween: 30,
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+        },
+        720: {
+            slidesPerView: 3,
+        },
+        960: {
+            slidesPerView: 4,
+        },
+    },
+});
+
+new Swiper('.relax__slider', {
+    navigation: {
+        nextEl: '.relax__next',
+        prevEl: '.relax__prev',
+    },
+    loop: true,
+    preloadImages: false,
+    thumbs: {
+        swiper: {
+            el: '.relax-mini',
+            slidesPerView: 2,
+            direction: 'horizontal',
+            spaceBetween: 30,
+            preloadImages: false,
+            breakpoints: {
+                500: {
+                    slidesPerView: 3,
+                    direction: 'vertical',
+                },
+            },
+        },
+    },
+});
